@@ -1,0 +1,35 @@
+<configs>
+
+	<append xpath="/windows/window[@name='HUDLeftStatBars']">
+	
+
+
+		<grid name="hud" pos="180,98" rows="3" cols="1" width="110" cell_width="110" cell_height="30" repeat_content="false" controller="InGameHUD" side="left" >	
+			<rect width="110" height="30" controller="PlayerStatsWindow">
+				<sprite depth="1" name="border" color="0,0,0,100" height="29" type="sliced" />
+				<sprite depth="2" pos="3,-3" name="background" height="24" width="103" color="64,64,64,100" type="sliced" />
+				<sprite depth="3" pos="3,-3" name="BarContent" type="filled" height="24" width="103" color="67,196,93" fill="{playerfoodfill}" />
+				<sprite depth="4" name="Icon" sprite="ui_game_symbol_fork" size="18,18" pos="8,-6" foregroundlayer="true"/>
+				<label depth="6" name="TextContent" pos="0,-7" font_size="18" color="[white]" justify="center" pivot="topleft" text="{playerfood}" height="30"/>
+			</rect>
+
+			<rect width="110" height="30" controller="PlayerStatsWindow">
+				<sprite depth="1" name="border" color="0,0,0,100" height="29" type="sliced" />
+				<sprite depth="2" pos="3,-3" name="background" height="24" width="103" color="64,64,64,100" type="sliced" />
+				<sprite depth="3" pos="3,-3" name="BarContent" type="filled" height="24" width="103" color="25,127,181" fill="{playerwaterfill}" />
+				<sprite depth="4" name="Icon" sprite="ui_game_symbol_water" size="18,18" pos="8,-6" foregroundlayer="true"/>
+				<label depth="6" name="TextContent" pos="0,-7" font_size="18" color="[white]" justify="center" pivot="topleft" text="{playerwater}" height="30"/>
+			</rect>
+
+			<rect width="110" height="30" controller="PlayerStatsWindow">
+				<sprite depth="1" name="border" color="0,0,0,100" height="29" type="sliced" />
+				<sprite depth="2" pos="3,-3" name="background" height="24" width="103" color="64,64,64,100" type="sliced" />
+				<sprite depth="3" pos="3,-3" type="filled" height="24" width="103" color="194,90,232" fill="100" />
+				<sprite depth="4" name="Icon" sprite="ui_game_symbol_temperature" size="18,18" pos="8,-6" foregroundlayer="true"/>
+				<label depth="6" name="TextContent" pos="0,-7" font_size="18" color="[white]" justify="center" pivot="topleft" text="{playercoretemp}" height="30"/>
+			</rect>
+		</grid>		
+
+	</append>
+	
+</configs>
